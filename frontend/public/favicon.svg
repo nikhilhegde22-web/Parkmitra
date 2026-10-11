@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+    <linearGradient id="pmAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <filter id="pmGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#4f46e5" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Rounded Shield -->
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#pmGrad)" filter="url(#pmGlow)"/>
+  
+  <!-- Subtle inner border -->
+  <rect x="5.5" y="5.5" width="53" height="53" rx="14.5" fill="none" stroke="#ffffff" stroke-opacity="0.25" stroke-width="1.5"/>
+
+  <!-- Stylized P symbol with Parking Pin & Mitra knot -->
+  <g fill="#ffffff">
+    <!-- Main stem -->
+    <rect x="18" y="15" width="7" height="34" rx="3.5" />
+    <!-- P-Loop -->
+    <path d="M21.5 15 H33 C40.1797 15 46 20.8203 46 28 C46 35.1797 40.1797 41 33 41 H21.5 Z" 
+          fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Modern Mitra dot / connected beacon -->
+  <circle cx="34" cy="28" r="4.5" fill="url(#pmAccent)"/>
+  <circle cx="45" cy="45" r="3" fill="#10b981" opacity="0.9"/>
+</svg>
